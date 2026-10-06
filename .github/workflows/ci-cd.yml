@@ -28,6 +28,7 @@ jobs:
 
       - name: Unit tests
         run: pytest
+
   build-scan-push:
     needs: test
     if: github.event_name == 'push'
